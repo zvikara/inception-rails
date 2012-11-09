@@ -1,21 +1,25 @@
 <div class="hero-unit">
   <h1>Inception!</h1>
-  <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-  <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+  <%= image_tag("banner3.png") %>
+  <p>Inception is a web application created at Tel Aviv AngelHack 2012 by Lior Kirsch and Zvika Rap.<br />
+  We want to help fashion designers to promote their designs by embedding them right inside facebook photos.</p>
 </div>
 <!-- Example row of columns -->
-<div class="row">
+<div class="row marketing">
   <div class="span4">
-    <h2>Heading</h2>
+    <%= link_to image_tag("facebook-tweaked.png"), '/auth/facebook/'  %>
+    <h2>Tweaked Photos</h2>
+    <p>View you and your facebook friends wearing the latest fashion items. </p>
+    <p><a class="btn" href="/auth/facebook/">Connect with facebook &raquo;</a></p>
+  </div>
+  <div class="span4">
+    <%= image_tag("facebook-tweaked.png") %>
+    <h2>Upload Items</h2>
     <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
     <p><a class="btn" href="#">View details &raquo;</a></p>
   </div>
   <div class="span4">
-    <h2>Heading</h2>
-    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-    <p><a class="btn" href="#">View details &raquo;</a></p>
-  </div>
-  <div class="span4">
+    <%= image_tag("facebook-tweaked.png") %>
     <h2>Heading</h2>
     <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
     <p><a class="btn" href="#">View details &raquo;</a></p>

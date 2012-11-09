@@ -1,0 +1,6 @@
+<h3>Home</h3>
+<ul>
+  <% @photos.each do |photo| %>
+  <li><img src='http://tube.liorkirsch.webfactional.com/changeImage?url=<%=photo["src_big"] %>'/></li>
+  <% end %>
+</ul>

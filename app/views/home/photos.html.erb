@@ -16,7 +16,7 @@
 <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
   <% @photos.each do |photo| %>
   <a href="http://tube.liorkirsch.webfactional.com/changeImage?url=<%=photo['src_big'] %>" title="<%=photo['caption'] %>" rel="gallery">
-    <img src="http://tube.liorkirsch.webfactional.com/changeImage?url=<%=photo['src_big'] %>&height=75" onerror='this.parentNode.parentNode.removeChild(this.parentNode)' />
+    <img src="http://tube.liorkirsch.webfactional.com/changeImage?url=<%=photo['src'] %>&height=75" onerror='this.parentNode.parentNode.removeChild(this.parentNode)' />
   </a>
   <% end %>
 </div>

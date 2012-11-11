@@ -6,6 +6,8 @@ class AuthenticationController < ApplicationController
     authentication = Authentication.find_by_provider_and_uid(auth['provider'], auth['uid'])
    
     if authentication
+      # update the user token
+      authentication.update_attributes(:token => auth["credentials"]["token"])
       # Authentication found, sign the user in.
       flash[:notice] = "Signed in successfully."
       sign_in_and_redirect(:user, authentication.user)

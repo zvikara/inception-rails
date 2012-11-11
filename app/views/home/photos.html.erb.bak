@@ -1,0 +1,7 @@
+<div class='photos'>
+  <% @photos.each do |photo| %>
+  <div class='photo'>
+    <img src='http://tube.liorkirsch.webfactional.com/changeImage?url=<%=photo["src_big"] %>' onerror='this.parentNode.parentNode.removeChild(this.parentNode)'/>
+  </div>
+  <% end %>
+</div>

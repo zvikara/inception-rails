@@ -1,7 +1,7 @@
 <div id="gallery" data-toggle="modal-gallery" data-target="#modal-gallery">
   <% @photos.each do |photo| %>
-  <div class="gallery-item" data-href="http://tube.liorkirsch.webfactional.com/changeImage?url=<%=photo['src_big'] %>&height=180" title="<%=photo['caption'] %>">
-    <%=photo['caption'] %>
+  <div class="gallery-item" data-href="http://tube.liorkirsch.webfactional.com/changeImage?url=<%=photo['src_big'] %>" title="<%=photo['caption'] %>">
+    <img src="http://tube.liorkirsch.webfactional.com/changeImage?url=<%=photo['src_big'] %>&height=180" />
   </div>
   <% end %>
 </div>
